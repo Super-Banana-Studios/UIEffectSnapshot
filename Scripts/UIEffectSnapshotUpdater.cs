@@ -56,7 +56,7 @@ namespace Coffee.UIExtensions
                 // Find instance in scene, or create new one.
                 return s_Instance
                     ? s_Instance
-                    : (s_Instance = FindObjectOfType<UIEffectSnapshotUpdater>() ?? Create());
+                    : (s_Instance = FindFirstObjectByType<UIEffectSnapshotUpdater>() ?? Create());
             }
         }
 
