@@ -200,7 +200,7 @@ namespace Coffee.UIExtensions
             set { m_CustomMaterials = value; }
         }
 
-        internal RenderTexture renderTexture { get; set; }
+        public RenderTexture renderTexture { get; internal set; }
         internal bool globalMode { get; set; }
         internal CommandBuffer commandBuffer { get; set; }
         internal Action<UIEffectSnapshotRequest> postAction { get; set; }
